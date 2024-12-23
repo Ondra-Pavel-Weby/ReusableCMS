@@ -15,11 +15,20 @@ const router = createRouter({
       },
     },
     {
-      path: '/about',
-      name: 'about',
-      component: () => import('../views/AboutView.vue'),
+      path: '/dashboard',
+      name: 'dashboard',
+      component: () => import('../views/DashboardView.vue'),
       meta: {
-        title: 'About',
+        title: 'Dashboard',
+        requiresAuth: true,
+      },
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'notFound',
+      component: () => import('../views/NotFoundView.vue'),
+      meta: {
+        title: '404 - Not Found',
       },
     },
   ],
