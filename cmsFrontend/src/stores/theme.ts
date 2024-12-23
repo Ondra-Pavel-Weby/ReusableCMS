@@ -6,6 +6,7 @@ export const useThemeStore = defineStore('theme', () => {
 
   function setTheme(dark: boolean) {
     isDark.value = dark
+    document.documentElement.classList.add('transitioning')
     document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light')
     localStorage.setItem('theme', dark ? 'dark' : 'light')
   }

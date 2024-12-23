@@ -2,10 +2,12 @@
   <div class="w-full h-screen py-6 flex flex-col justify-between items-center">
     <header class="w-full px-6 flex justify-between">
       <div>
-        <h1>{{ clientName }}</h1>
+        <h1>{{ companyStore.name }}</h1>
       </div>
-      <div>
+      <div class="flex items-center gap-4">
         <ThemeSwap />
+        <hr class="h-8 w-[2px] border-none bg-current">
+        <LangSwap />
       </div>
     </header>
     <LoginMain />
@@ -18,6 +20,8 @@
 <script setup lang="ts">
 import LoginMain from "../components/LoginMain.vue";
 import ThemeSwap from "../components/ThemeSwap.vue";
+import LangSwap from "../components/LangSwap.vue";
+import { useCompanyStore } from '../stores/company'
 
-const clientName: string = "Bowling Radava"
+const companyStore = useCompanyStore()
 </script>
