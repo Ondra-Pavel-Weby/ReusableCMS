@@ -1,12 +1,12 @@
 <template>
-  <div class="w-full h-screen py-6 flex flex-col justify-between items-center">
-    <header class="w-full px-6 flex justify-between">
+  <div class="w-full h-screen py-3 flex flex-col justify-between items-center gap-10">
+    <header class="w-full px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
       <div>
-        <h1>{{ companyStore.name }}</h1>
+        <h1 class="text-2xl">{{ companyStore.name }}</h1>
       </div>
-      <div class="flex items-center gap-4">
+      <div class="flex flex-col sm:flex-row items-center gap-4">
         <ThemeSwap />
-        <hr class="h-8 w-[2px] border-none bg-current">
+        <hr class="h-8 w-[2px] border-none bg-current hidden sm:block">
         <LangSwap />
       </div>
     </header>
