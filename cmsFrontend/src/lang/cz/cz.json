@@ -1,0 +1,10 @@
+{
+  "username": "Uživatelské jméno",
+  "enterUsername": "Vložte uživatelské jméno",
+  "password": "Heslo",
+  "enterPassword": "Vložte heslo",
+  "show": "Ukázat",
+  "hide": "Schovat",
+  "remember": "Zapamatovat si údaje",
+  "login": "Přihlásit se"
+}
