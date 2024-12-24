@@ -1,4 +1,8 @@
 {
+  "404": "404 - Stránka nenalezena",
+  "404-text": "Omlouváme se, ale stránka, kterou hledáte, nebyla nalezena nebo neexistuje.",
+  "back": "Vrátit zpět",
+
   "username": "Uživatelské jméno",
   "enterUsername": "Vložte uživatelské jméno",
   "password": "Heslo",
@@ -6,5 +10,8 @@
   "show": "Ukázat",
   "hide": "Schovat",
   "remember": "Zapamatovat si údaje",
-  "login": "Přihlásit se"
+  "login": "Přihlásit se",
+
+  "news": "Aktuality",
+  "pages": "Stránky"
 }

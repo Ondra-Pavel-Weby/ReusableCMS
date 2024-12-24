@@ -1,4 +1,8 @@
 {
+  "404": "404 - Page not found",
+  "404-text": "We're sorry, but the page you're looking for was not found or does not exist.",
+  "back": "Go back",
+
   "username": "Username",
   "enterUsername": "Enter username",
   "password": "Password",
@@ -6,5 +10,8 @@
   "show": "Show",
   "hide": "Hide",
   "remember": "Remember me",
-  "login": "Login"
+  "login": "Login",
+
+  "news": "News",
+  "pages": "Pages"
 }

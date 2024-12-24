@@ -20,7 +20,22 @@ const router = createRouter({
       component: () => import('../views/DashboardView.vue'),
       meta: {
         title: 'Dashboard',
-        requiresAuth: true,
+      },
+    },
+    {
+      path: '/dashboard/news',
+      name: 'news',
+      component: () => import('../views/Dashboard/NewsView.vue'),
+      meta: {
+        title: 'Dashboard',
+      },
+    },
+    {
+      path: '/dashboard/pages',
+      name: 'pages',
+      component: () => import('../views/Dashboard/PagesView.vue'),
+      meta: {
+        title: 'Dashboard',
       },
     },
     {

@@ -8,3 +8,7 @@
     transition: all 0.2s ease-in-out;
   }
 }
+
+.router-link-active {
+  @apply text-primary font-bold;
+}

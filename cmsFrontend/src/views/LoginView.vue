@@ -21,7 +21,7 @@
 import LoginMain from "../components/LoginMain.vue";
 import ThemeSwap from "../components/ThemeSwap.vue";
 import LangSwap from "../components/LangSwap.vue";
-import { useCompanyStore } from '../stores/company'
 
+import { useCompanyStore } from '../stores/company'
 const companyStore = useCompanyStore()
 </script>

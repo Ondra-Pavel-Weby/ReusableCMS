@@ -16,7 +16,7 @@ import { useLangStore } from '../stores/language'
 const { locale } = useI18n()
 const langStore = useLangStore()
 
-const setLanguage = (newLang) => {
+const setLanguage = (newLang: string) => {
   locale.value = newLang
   localStorage.setItem('lang', newLang)
 }

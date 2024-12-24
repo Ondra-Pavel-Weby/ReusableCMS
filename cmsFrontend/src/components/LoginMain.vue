@@ -24,7 +24,9 @@
 
     </div>
 
-    <button type="submit" class="btn btn-accent w-full text-base">{{ t('login') }}</button>
+    <router-link to="/dashboard" class="w-full"><button type="submit" class="btn btn-accent w-full text-base">{{
+      t('login')
+        }}</button></router-link>
   </main>
 </template>
 
@@ -42,6 +44,5 @@ const togglePasswordVisibility = () => {
 }
 
 import { useI18n } from 'vue-i18n';
-
 const { t } = useI18n();
 </script>
