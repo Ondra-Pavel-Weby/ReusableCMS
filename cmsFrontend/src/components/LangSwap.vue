@@ -10,7 +10,7 @@
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import { watchEffect } from 'vue'
+import { watchEffect, onMounted } from 'vue'
 import { useLangStore } from '../stores/language'
 
 const { locale } = useI18n()
@@ -27,11 +27,17 @@ const toggleLanguage = () => {
   setLanguage(newLang)
 }
 
+onMounted(() => {
+  langStore.initLang()
+})
+
 watchEffect(() => {
   const storedLang = localStorage.getItem('lang')
   if (storedLang) {
     locale.value = storedLang
     langStore.isEn = storedLang === 'en'
+  } else {
+    setLanguage('cz')
   }
 })
 </script>
